@@ -36,19 +36,19 @@ body{
     background: rgb(214, 213, 213);
     box-shadow: 8px 8px 10px 1px rgb(87, 87, 87);
     border-radius: 10px;
-    transition: top 0ms ease-in-out 200ms,
+    transition: top 0ms ease-in-out 200ms, /* time taken to popup form */
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms;
 }
 .popup.active{
     top: 50%;
     opacity: 1;
-    transform: translate(-50%,-50%) scale(1);
+    transform: translate(-50%,-50%) scale(1);  /* time taken to popup form */
     transition: top 0ms ease-in-out 0ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms;
 }
-.popup .close-btn {
+.popup .close-btn {  /* close button style */
       position: absolute;
       top: 10px;
       right: 10px;
@@ -76,7 +76,7 @@ body{
     color: #222;
  }
   .popup .form .form-element input[type="text"],
-  .popup .form .form-element input[type="password"]{
+  .popup .form .form-element input[type="password"]{  /* style of my popup form */
     margin-top: 5px;
     display: block;
     width: 100%;
